@@ -23,10 +23,9 @@ module.exports = () => {
         template: './index.html',
         title: 'Webpack Plugin',
       }),
-      new WorkboxPlugin.GenerateSW(),
       new InjectManifest({
         swSrc: './src/sw.js',
-        swDest: 'service-worker.js',
+        swDest: './src/sw.js',
       }),
     ],
 
