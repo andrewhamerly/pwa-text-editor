@@ -4,7 +4,7 @@
   "description": "This Just Another Text Editor is a Progressive Web App that allows for several ways to persist data with the client browser.",
   "main": "server.js",
   "scripts": {
-    "start:dev": "concurrently \"cd client && npm run build\" \"cd server && npm run server\" ",
+    "start:dev": "concurrently \"cd client && npm run dev\" \"cd server && npm run server\" ",
     "start": "npm run build && cd server && node server.js",
     "server": "cd server server.js --ignore client",
     "build": "cd client && npm run build",
